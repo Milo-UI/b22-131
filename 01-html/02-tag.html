@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End - HTML - 02 Tag</title>
+</head>
+<body style="min-height: 200vh;">
+
+    <div class="wrapper">
+
+        <p>
+            <!-- Il tag STRONG rende porzioni di testo in grassetto e comunica al browser che si tratta di una parte importante del contenuto -->
+            Hello <strong>World</strong>!
+        </p>
+
+        <p>
+            <!-- Il tag EM enfatizza una porzione di testo rendendola graficamente in corsivo -->
+            La mia prima <em>pagina web</em>.
+        </p>
+
+        <!-- 
+            Abbiamo a disposizione 6 tag per i titoli all'interno del testo. Si chiamano headings e i tag sono: h1, h2, h3, h4, h5, h6.
+
+            Hanno un valore semantico decrescente, quindi il tag H1 di una pagina conterrà il suo titolo principale e ce ne potrà essere solo uno.
+
+            I contenuti saranno divisi all'interno della pagina e ogni porzione avrà il suo titolo che spiegherà di cosa parla. Questo titolo sarà contenuto in un H2.
+
+            Se all'interno delle macro-porzioni di contenuto ci sarà bisogno di suddividere ancora, allora potremo utilizzare gli H3 per indicare le sotto-porzioni.
+
+            E così via, anche se H4, H5 e H6 non sono quasi mai utilizzati.
+
+            È importantissimo utilizzare gli heading secondo il loro valore semantico e NON il loro aspetto sulla pagina, per quello ci sarà il CSS a occuparsene.
+        -->
+
+        <h1>Titolo principale</h1>
+
+        <h2>Sotto-argomento 1</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem beatae ex vero. Sed numquam saepe provident minima velit, aliquid esse omnis repellendus sequi veritatis fugit perferendis quas corporis sapiente adipisci?
+        </p>
+
+        <h3>Sotto-argomento 1.1</h3>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, officia!
+        </p>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ullam voluptas autem fugiat repellendus error nulla ratione, perspiciatis aliquam ducimus veritatis neque sequi reiciendis officia quod ea omnis sint molestiae.
+        </p>
+
+        <h3>Sotto-argomento 1.2</h3>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, incidunt laborum omnis a soluta aut quaerat rem eos et, harum repudiandae quas voluptates. Cumque quia voluptatibus dolorum, quos dolore officiis.
+        </p>
+
+        <h2>Sotto-argomento 2</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis totam beatae dolores. Totam vel sint omnis nihil illo incidunt amet soluta perferendis, voluptas asperiores, cumque quia itaque fugit at officiis.
+        </p>
+
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <!-- Il tag HR, Horizontal Rule, è un tag autoconclusivo che crea una riga divisoria -->
+        <hr>
+
+        <!-- 
+            Liste ordinate e non ordinate.
+            È possibile creare delle liste puntate o numerate utilizzando i tag corretti.
+
+            Questi sono UL e OL, rispettivamente Unordered List e Ordered List. Comunicano al lbrowser che ciò che che contengono è una lista. Ogni elemento della lista invece viene contenuto all'interno di un tag LI, List Item, e gli LI sono gli unici tag accettati come figli diretti di UL e OL.
+        -->
+        <ul>
+            <li>Mario</li>
+            <li>Luigi</li>
+            <li>Yoshi</li>
+        </ul>
+
+        <ol>
+            <li>Peach</li>
+            <li>Toad</li>
+            <li>Bowser</li>
+        </ol>
+
+        <hr>
+
+        <!--
+            Il tag DIV è probabilmente il tag più usato quando si crea una pagina web.
+            Si tratta di un contenitore generico che divide il contenuto in porzioni o viene usato per raggruppare elementi che ha senso accostare tra loro.
+            Si usa molto per creare layout in combinazione con il CSS.
+            Non hanno un effetto visivo.
+        -->
+        <div>
+            Sono un tag DIV
+        </div>
+
+        <!--
+            Il tag SPAN è simile a un DIV, ma non si comporta nella stessa maniera.
+            È sempre un tag generico e viene spesso utilizzato per assegnare regole CSS a una porzione di testo o ad altri elementi.
+        -->
+        <span>Sono un tag SPAN</span>
+
+        <hr>
+
+        <!--
+            Il tag IMG è un tag autoconclusivo che permette di visualizzare un'immagine all'interno di una pagina.
+
+            Per dire al browser quale immagine debba essere renderizzata, dobbiamo usare un ATTRIBUTO.
+
+            Gli attributi sono un qualcosa che si aggiunge all'interno del tag di apertura, nelle parentesi angolari, per fornire al browser informazioni aggiuntive sull'elemento.
+
+            Assegnando al tag IMG un attributo src (source) possiamo dire al browser dove andare a trovare l'immagine da renderizzare sulla pagina. Assegnando all'attributo src il percorso dell'immagine da utilizzare, il browser saprà che deve renderizzare un'immagine che si trova esattamente dove specificato nell'src.
+
+            È bene anche utilizzare l'attributo alt (ALTernative text) che fornisce una descrizione testuale dell'immagine. Questo serve in caso l'immagine non possa essere renderizzata e, ancor più importante, a essere riconosciuta da lettori di pagine web per ipovedenti.
+        -->
+        <img src="img/gattino.webp" alt="Gattino carino" width="400">
+
+        <hr>
+
+        <!--
+            Il tag A, Àncora, aerve a creare link a altre pagine, altri siti o altri contenuti.
+
+            Il tag A ha bisogno dell'attributo href (Hyperlink REFerence) il cui valore indica la pagina il sto o il contenuto a cui il link deve puntare.
+
+            È bene utilizzare l'attributo title, che riporta un messaggio per l'utente che indica dove si andrà a finire cliccando sul link.
+
+            Infine, se il link punta a un sito esterno, conviene sempre usare l'attributo target con un valore di _blank, in modo da far aprire il sito esterno in una nuova tab del browser. In questo modo non perdiamo l'utente che si trova sul nostro sito.
+        -->
+        <a href="https://www.google.com" title="Link al sito di Google" target="_blank">Google</a>
+        <br>
+        <a href="01-intro.html" title="Vai alla prima pagina del corso">Torna all'inizio</a>
+
+        <!-- Intestazione della pagina o di una sezione in cima alla pagina -->
+        <header></header>
+
+        <!-- Menù di navigazione -->
+        <nav></nav>
+
+        <!-- Contenuto principale della pagina -->
+        <main></main>
+
+        <!-- Contenuti secondari o correlati (pubblicità, box laterali, ecc.) -->
+        <aside></aside>
+
+        <!-- Contenuto autonomo e riutilizzabile (articolo di blog, scheda prodotto, card, ecc.) -->
+        <article></article>
+
+        <!-- Raggruppamento tematico dei contenuti -->
+        <section></section>
+
+        <!-- Chiusura della pagina -->
+        <footer></footer>
+
+    </div>
+
+</body>
+</html>
