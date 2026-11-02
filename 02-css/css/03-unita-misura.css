@@ -1,0 +1,28 @@
+/*
+    UNITÀ DI MISURA
+
+    Si dividono in assolute e relative
+
+        Assolute -> px
+        Sono fisse, quindi non cambiano in base al contesto o al dispositivo. I pixel sono l'unità di misura più usata, ma su schermi diversi un pixel non ha lo stesso "peso visivo."
+
+        Relative -> %, rem, em, vh, vw
+        Si adattano in base al contesto e sono fondamentali per il design responsive.
+
+            - Percentuali %
+                dipendono dal font o dalla larghezza del contenitore
+            
+            - em (relative al font-size del genitore)
+                1em = dimensione del font del contenitore
+            
+            - rem (relative al font-size del root element <html>)
+                1rem = dimensione del font-size impostata sul tag <html>
+                Standard: browser di default -> 16px
+                Più prevedibile e consigliata rispetto a em
+
+            - vw e vh (viewport width/height)
+                relative alla finestra del browser
+                1vw = 1% della larghezza della finestra
+                1vh = 1% dell'altezza della finestra
+                Perfette per sezioni full-screen (o relative a una percentuale specifica dello schermo) e layout responsive
+*/

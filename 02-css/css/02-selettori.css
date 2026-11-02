@@ -1,0 +1,84 @@
+/*
+    I selettori di tipo vengono utilizzati per selezionare e applicare stili a TUTTI gli elementi di un determinato tipo (tag).
+*/
+p {
+    color: #535353;
+}
+
+/*
+    Possiamo assegnare una classe con l'attributo HTML class="" a un elemento e richiamarla nel foglio di stile con il nome che abbiamo scelto preceduto da un punto.
+
+    Assegno agli elementi che mi interessano la classe error e da CSS la richiamo per dire a TUTTI gli elementi che possegono questa classe che dovranno avere le regole specificate qua sotto.
+*/
+.error {
+    color: tomato;
+}
+
+/*
+    Se volessimo selezionare solo i paragrafi con classe error, dovremmo ricorrere a un selettore più specifico
+*/
+p.error {
+    color: crimson;
+}
+
+p.success {
+    color: #019d6b;
+}
+
+p.success.feedback {
+    border: 2px dashed #019d6b;
+    padding: 10px;
+}
+
+p.success.feedback-alt {
+    border: 2px solid #019d6b;
+    border-radius: 10px;
+    background-color: #b9ffe9;
+    text-align: center;
+}
+
+p.feedback-alt {
+    font-size: 28px;
+}
+
+/*
+    L'attributo id può essere usato a sua volta in CSS come selettore di UN elemento (uno solo, visto che l'id è univoco).
+    Converrebbe evitare di assegnarli solo per CSS, perché vengono utilizzati spesso per JavaScript, in più hanno una specificità più forte di quella delle classi, quindi le regole assegnate ad essi sono più difficili da sovrascrivere. 
+*/
+#content {
+    background-color: #e8f9fa;
+    padding: 20px;
+}
+
+/*
+    È possibile essere ancora più specifici sfruttando i selettori di discendenza. Possiamo selezionare gli elementi figli di un elemento genitore.
+*/
+/* Seleziono tutti i paragrafi che sono contenuti dentro a un elemento DIV */
+div p {
+    font-weight: bold;
+}
+
+/* Selettori multipli: possiamo assegnare le stesse regole a più elementi slegati tra loro */
+h1,
+h2,
+h3,
+h4 {
+    background-color: cadetblue;
+}
+
+/* ------------------------------ EREDITARIETÀ ------------------------------ */
+/*
+    Gli elementi HTML possono ereditare alcune proprietà CSS dai genitori, ma non tutte.
+*/
+section {
+    color: lightcoral; /* ereditato */
+    border: 1px solid grey; /* non ereditato */
+    margin: 40px; /* non ereditato */
+    font-weight: bold; /* ereditato */
+}
+
+/* Possiamo forzare un elemento a ereditare le proprietà che altrimenti non erediterebbe */
+section p {
+    border: inherit;
+    margin: inherit;
+}
