@@ -33,6 +33,27 @@ hr {
     margin-block: 1rem; /* margin top e bottom */
 }
 
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline-block;
+}
+
+input,
+select,
+textarea {
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #545454;
+    border-radius: 0.2rem;
+    box-shadow: none;
+}
+
 .wrapper {
     /* width: min(80%, 990px); */
     width: 100%;
