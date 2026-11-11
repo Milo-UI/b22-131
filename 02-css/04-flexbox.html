@@ -18,6 +18,100 @@
             </p>
         </div>
     </header>
-    
+
+    <main>
+
+        <!-- Concetti base -->
+        <section class="section">
+            <div class="container">
+
+                <h2>1) Cos'è Flexbox e come usarlo</h2>
+
+                <!--
+                    Flexbox è un sistema di layout monodimensionale.
+                    Questo significa che è perfetto per:
+                        - allineare elementi su una riga o una colonna
+                        - distribuire lo spazio tra gli elementi
+                        - gestire facilmente l'allineamento verticale e orizzontale
+
+                    NON è pensato per layout complessi a griglia (per quelli c'è CSS Grid), ma è ideale per:
+                        - navbar
+                        - gruppi di bottoni
+                        - card affiancate
+                        - elementi perfettamente centrati
+                -->
+
+                <p>
+                    Flexbox è un metodo moderno di disporre elementi in fila o in colonna, gestendo gli spazi e gli allineamenti in maniera molto più semplice rispetto a float o a inline-block.
+                </p>
+
+                <div class="note">
+                    <strong>Parole chiave:</strong>
+
+                    <ul>
+                        <li>
+                            <strong>Flex container</strong>: l'elemento a cui mettiamo <code>display: flex</code>.
+                        </li>
+                        <li>
+                            <strong>Flex items</strong>: gli elementi figli diretti del container flex.
+                        </li>
+                        <li>
+                            <strong>Main axis</strong>: asse principale (dipende da <code>flex-direction</code>).
+                        </li>
+                        <li>
+                            <strong>Cross axis</strong>: asse trasversale, perpendicolare al main axis.
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+
+                <h2>2) Il container flex: flex e flex-direction</h2>
+
+                <p>
+                    Il primo passo è trasformare un elemento in <strong>flex container</strong> usando <code>display: flex</code>. Poi bisogna scegliere la direzione principale con <code>flex-direction</code>: <code>row</code> (default, orizzontale) oppure <code>column</code> (verticale).
+                </p>
+
+                <div class="flex-demo-grid">
+                    <!-- esempio direction row -->
+                    <div class="flex-block">
+                        <h3>flex-direction: row (default)</h3>
+
+                        <div class="flex-row-base">
+                            <div class="box">A</div>
+                            <div class="box">B</div>
+                            <div class="box">C</div>
+                        </div>
+
+                        <p class="caption">
+                            Gli elementi si dispongono da sinistra a destra (main axis orizzontale).
+                        </p>
+                    </div>
+
+                    <!-- esempio direction column -->
+                    <div class="flex-block">
+                        <h3>flex-direction: column</h3>
+
+                        <div class="flex-column-base">
+                            <div class="box">A</div>
+                            <div class="box">B</div>
+                            <div class="box">C</div>
+                        </div>
+
+                        <p class="caption">
+                            Gli elementi si dispongono dall'alto verso il basso (main axis verticale).
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+    </main>
+
 </body>
 </html>
