@@ -54,6 +54,18 @@ textarea {
     box-shadow: none;
 }
 
+table,
+th,
+td {
+    border: 1px solid #323231;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: .5rem 1rem;
+}
+
 .wrapper {
     /* width: min(80%, 990px); */
     width: 100%;
