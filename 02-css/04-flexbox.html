@@ -7,12 +7,12 @@
 
     <link rel="stylesheet" href="css/04-flexbox.css">
 </head>
-<body>
+<body style="padding-bottom: 100vh;">
 
     <header class="site-header">
         <div class="container">
             <span class="eyebrow">Front End - CSS</span>
-            <h1>Flexbox</h1>
+            <h1>IL CORSO È IN PAUSA! RIPRENDERÀ LEZIONE ALLE 12:40</h1>
             <p class="lead">
                 Flex container e flex items. Differenza tra asse principale e asse trasversale. Centrare, allineare e distribuire gli elementi in un layout
             </p>
@@ -233,7 +233,115 @@
                     
                 </div>
 
-                <p class="caption"></p>
+                <p class="caption">
+                    Ridurre la larghezza della finestra: i tag andranno a capo mantenendo lo spazio (gap) uniforme tra loro.
+                </p>
+                
+            </div>
+        </section>
+
+        <!-- flex grow/shrink + card layout -->
+        <section class="section">
+            <div class="container">
+
+                <h2>5) Far crescere gli elementi: flex-grow, flex-shrink, flex-basis</h2>
+
+                <p>
+                    La proprietà "flex" è uno shorthand per: <br>
+                    <code>flex: grow shrink basis;</code>
+                </p>
+
+                <p>
+                    Con la proprietà <code>flex</code> possiamo controllare quanto un elemento sia "elastico": quanto cresce, quanto si restringe e qual è la sua dimensione di base.
+                </p>
+
+                <div class="note">
+                    <strong>Regola pratica:</strong> <br>
+                    Spesso basta usare <code>flex: 1;</code> per far sì che più elementi occupino tutto lo spazio disponibile in parti uguali.
+                </div>
+
+                <!-- Esempio: layout di card che si allargano in modo fluido -->
+                <div class="cards-flex-row">
+                    <!-- ogni card è un flex item -->
+                    <article class="card">
+                        <h3>Card 1</h3>
+                        <p>
+                            In questo layout ogni card ha <code>flex: 1;</code> e il container è impostato con <code>display:flex;</code>.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Card 2</h3>
+                        <p>
+                            Le card crescono e si restringono insieme, mantenendo una larghezza uniforme, con gap controllato dal container.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Card 3</h3>
+                        <p>
+                            Su schermi più piccoli il layout diventa a colonna grazie alla media query.
+                        </p>
+                    </article>
+                </div>
+
+                <h2>5b) Altri esempi</h2>
+
+                <p>
+                    La proprietà <code>flex</code> è uno shorthand per <code>flex-grow</code>, <code>flex-shrink</code> e <code>flex-basis</code>. Qui vediamo separatamente cosa fa ognuna con 3 demo visive.
+                </p>
+
+                <div class="note" style="margin-bottom: 1.5rem;">
+                    <strong>Idea mentale:</strong> <br>
+                    Prima Flexbox guarda la <code>flex-basis</code> (dimensione di base), poi usa <code>flex-grow</code> se avanza spazio e <code>flex-shrink</code> se lo spazio non basta.
+                </div>
+
+                <!-- DEMO 1: flex-grow -->
+                <h3>1) flex-grow: come dividersi lo spazio in più</h3>
+
+                <p>
+                    Tutti gli elementi partono dalla stessa base, ma hanno valori di <code>flex-grow</code> diversi. Ridimensiona la finestra e guarda come cambia la proporzione.
+                </p>
+
+                <div class="flex-gsb-demo flex-gsb-grow">
+                    <div class="box-gsb grow-1">grow: 1</div>
+                    <div class="box-gsb grow-1">grow: 1</div>
+                    <div class="box-gsb grow-2">grow: 2</div>
+                </div>
+
+                <p class="caption" style="margin-bottom: 2rem;">
+                    Il terzo elemento ha <code>flex-grow: 2</code> e prende il doppio dello spazio extra rispetto agli altri  (che hanno grow 1).
+                </p>
+
+                <!-- DEMO 2: flex-shrink -->
+                <h3>2) flex-shrink: ridurre la dimensione quando lo spazio non basta</h3>
+
+                <p>
+                    Qui sotto le basi sono uguali, ma uno degli elementi ha <code>flex-shrink: 0</code>, cioè non vuole restringersi.
+                </p>
+
+                <div class="flex-gsb-demo flex-gsb-shrink">
+                    <div class="box-gsb shrink-1">shrink: 1</div>
+                    <div class="box-gsb shrink-0">shrink: 0</div>
+                    <div class="box-gsb shrink-1">shrink: 1</div>
+                </div>
+
+                <p class="caption" style="margin-bottom: 2rem;">
+                    L'elemento con <code>flex-shrink: 0</code> prova a mantenere la sua larghezza, mentre gli altri si comprimono.
+                </p>
+
+                <!-- DEMO 3: flex-basis -->
+                <h3>3) flex-basis: da che dimensione bisogna partire</h3>
+
+                <p>
+                    Tutti hanno lo stesso <code>flex-grow</code> e <code>flex-shrink</code>, ma basi diverse. Il risultato: partono da larghezze diverse e poi crescono / si restringono in proporzione.
+                </p>
+
+                <div class="flex-gsb-demo flex-gsb-basis">
+                    <div class="box-gsb basis-small">basis: 100px</div>
+                    <div class="box-gsb basis-medium">basis: 200px</div>
+                    <div class="box-gsb basis-large">basis: 300px</div>
+                </div>
                 
             </div>
         </section>
