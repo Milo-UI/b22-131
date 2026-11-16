@@ -12,7 +12,7 @@
     <header class="site-header">
         <div class="container">
             <span class="eyebrow">Front End - CSS</span>
-            <h1>IL CORSO È IN PAUSA! RIPRENDERÀ LEZIONE ALLE 12:40</h1>
+            <h1>Flexbox</h1>
             <p class="lead">
                 Flex container e flex items. Differenza tra asse principale e asse trasversale. Centrare, allineare e distribuire gli elementi in un layout
             </p>
@@ -342,6 +342,95 @@
                     <div class="box-gsb basis-medium">basis: 200px</div>
                     <div class="box-gsb basis-large">basis: 300px</div>
                 </div>
+                
+            </div>
+        </section>
+
+        <!-- align-self e order -->
+        <section class="section section-alt">
+            <div class="container">
+
+                <h2>6) Personalizzare il singolo elemento: align-self e order</h2>
+
+                <p>
+                    A volte vogliamo che un solo elemento si comporti in modo diverso dagli altri. <br>
+                    Possiamo usare:
+                </p>
+
+                <ul>
+                    <li>
+                        <code>align-self</code>: per cambiare l'allineamento lungo l'asse trasversale
+                    </li>
+                    <li>
+                        <code>order</code>: per cambiare l'ordine visivo degli elementi
+                    </li>
+                </ul>
+
+                <div class="flex-self-order-demo">
+                    <!--
+                        Container flex con:
+                        - align-items: center
+                        - uno degli elementi usa align-self per "staccarsi"
+                        - un elemento usa order per apparire primo
+                    -->
+                    <div class="flex-self-order">
+                        <div class="pill pill-normal">
+                            Elemento 1
+                        </div>
+                        <div class="pill pill-special">
+                            Elemento con align-self
+                        </div>
+                        <div class="pill pill-reordered">
+                            Primo elemento solo visivamente
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Esempio di navbar con flex -->
+        <section class="section">
+            <div class="container">
+
+                <h2>7) Esempio realistico: navbar con Flexbox</h2>
+
+                <p>
+                    Un caso d'uso tipico: creare una navbar con logo a sinistra, link al centro e bottoni a destra.
+                    Flexbox rende questa cosa molto più semplice rispetto a float o inline-block.
+                </p>
+
+                <nav class="navbar">
+                    <div class="navbar-logo">
+                        LOGO
+                    </div>
+
+                    <ul class="navbar-links">
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Corsi</a>
+                        </li>
+                        <li>
+                            <a href="#!">Risorse</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contatti</a>
+                        </li>
+                        <li class="btn-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x preview-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-actions">
+                        <button class="btn btn-light">Login</button>
+                        <button class="btn btn-primary">Registrati</button>
+                        <button class="btn btn-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+                        </button>
+                    </div>
+                </nav>
                 
             </div>
         </section>
