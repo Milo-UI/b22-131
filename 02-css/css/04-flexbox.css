@@ -128,3 +128,100 @@ code {
     text-align: center;
     min-width: 44px;
 }
+
+/* Variante di box più alta */
+.box.tall {
+    padding: 1.4rem .7rem;
+}
+
+.tag {
+    background: #4f46e5;
+    color: #eef2ff;
+    border-radius: 999px;
+    padding: .35rem .9rem;
+    font-size: .85rem;
+    /* Per non andare a capo all'interno dei tag */
+    white-space: nowrap;
+}
+
+/* ----------------------- DEMO: FLEX E FLEX-DIRECTION ---------------------- */
+
+/* Container flex base (riga) */
+.flex-row-base {
+    /*
+        display: flex trasforma questo elemento in un "flex container"
+
+        CONSEGUENZE:
+        - i suoi figli diretti diventano "flex items"
+        - per default flex-direction è "row", quindi l'asse principale è quello orizzontale
+    */
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    /* Aggiungiamo padding e sfondo per vedere il container flex */
+    background: #e0e7ff;
+    padding: 0.6rem;
+    border-radius: 12px;
+}
+
+/* Container flex base (colonna) */
+.flex-column-base {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    /* Aggiungiamo padding e sfondo per vedere il container flex */
+    background: #e0e7ff;
+    padding: 0.6rem;
+    border-radius: 12px;
+}
+
+/* ------------------- DEMO: JUSTIFY-CONTENT E ALIGN-ITEMS ------------------ */
+
+/* justify-content */
+.justify-between {
+    /*
+        L'asse principale è orizzontale.
+        justify-content decide la distribuzione degli items lungo la riga.
+    */
+    justify-content: space-between;
+}
+
+/* Container più alto per far vedere l'allineamento verticale */
+.flex-row-tall {
+    display: flex;
+    gap: .5rem;
+
+    background: #e0e7ff;
+    padding: .6rem;
+    border-radius: 12px;
+
+    /* Altezza fissa solo per scopo dimostrativo */
+    min-height: 120px;
+}
+
+/* align-items */
+.align-center {
+    /*
+        align-items lavora sul cross axis.
+        Con flex-direction: row, il cross axis è verticale.
+    */
+    align-items: center;
+}
+
+/* -------------------------- DEMO: FLEX-WRAP E GAP ------------------------- */
+.flex-wrap-demo {
+    margin-top: 1.3rem;
+}
+
+/* Container flex con wrap e gap */
+.flex-wrap-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    
+    background: #e0e7ff;
+    padding: .6rem;
+    border-radius: 12px;
+}
