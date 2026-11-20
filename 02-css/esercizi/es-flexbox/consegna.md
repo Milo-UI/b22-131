@@ -30,13 +30,12 @@ Le missioni 1-5 sono obbligatorie. La 6, la 7 e la 8 se avete tempo. Ogni missio
 
 - Logo a sinistra, menu in mezzo, bottone "Prenota un tavolo" a destra, tutti centrati in verticale.
 - Le voci del menu stanno in riga, distanziate tra loro.
-- Nel logo, l'icona della zampa è allineata al centro del testo.
 - Sotto i 760px l'header va in colonna, centrato, e le voci del menu vanno a capo se non ci stanno.
 
 <details>
 <summary>Aiutino</summary>
 
-`justify-content: space-between` sul contenitore, `align-items: center` per l'asse verticale. Per il logo, che è un link e deve restare in linea, guardate come è fatto `.btn` nella lezione: `display: inline-flex`. Per il mobile vi serve una media query, come quella delle card nella lezione.
+`justify-content: space-between` sul contenitore, `align-items: center` per l'asse verticale.
 
 </details>
 
@@ -80,7 +79,7 @@ Mettete il contenitore in colonna: ora il main axis è verticale. Quale propriet
 <details>
 <summary>Aiutino</summary>
 
-La card stessa può essere un contenitore flex in colonna. In una colonna gli item si allungano in larghezza: per il badge serve una proprietà che agisce su un solo elemento. Per i bottoni: chi può "prendersi" lo spazio in più dentro la card?
+La card stessa può essere un contenitore flex in colonna. In una colonna gli item si allungano in larghezza: per il badge serve una proprietà che agisce su un solo elemento.
 
 </details>
 
