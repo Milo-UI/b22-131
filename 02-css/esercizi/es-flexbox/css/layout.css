@@ -1,14 +1,3 @@
-/* --------------------- LAYOUT.CSS - QUI SCRIVETE VOI ---------------------- */
-/*
-    Regole del gioco:
-        - tutto il layout si fa con Flexbox
-        - niente float, position, grid o inline-block per affiancare gli elementi
-        - per lo spazio tra gli elementi usate gap, non i margin
-        - non si modificano index.html e base.css
-
-    La consegna completa è in consegna.md, le immagini del risultato atteso sono nella cartella img.
-*/
-
 /* ------------------------------- 1. HEADER -------------------------------- */
 /* Selettori utili: .header-inner, .logo, .nav-links */
 
