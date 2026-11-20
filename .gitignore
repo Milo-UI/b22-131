@@ -429,3 +429,7 @@ FodyWeavers.xsd
 
 
 .DS_Store
+
+# Soluzione esercitazione Flexbox (da non pubblicare prima della correzione)
+02-css/esercizi/es-flexbox/soluzione.html
+02-css/esercizi/es-flexbox/css/layout-soluzione.css

@@ -1,0 +1,48 @@
+/* --------------------- LAYOUT.CSS - QUI SCRIVETE VOI ---------------------- */
+/*
+    Regole del gioco:
+        - tutto il layout si fa con Flexbox
+        - niente float, position, grid o inline-block per affiancare gli elementi
+        - per lo spazio tra gli elementi usate gap, non i margin
+        - non si modificano index.html e base.css
+
+    La consegna completa è in consegna.md, le immagini del risultato atteso sono nella cartella img.
+*/
+
+/* ------------------------------- 1. HEADER -------------------------------- */
+/* Selettori utili: .header-inner, .logo, .nav-links */
+
+
+
+/* -------------------------------- 2. HERO --------------------------------- */
+/* Selettori utili: .hero-inner, .hero-actions */
+
+
+
+/* ------------------------------ 3. VANTAGGI ------------------------------- */
+/* Selettori utili: .features-list, .feature, .feature-icon */
+
+
+
+/* ------------------------------- 4. FILTRI -------------------------------- */
+/* Selettori utili: .filters */
+
+
+
+/* -------------------------------- 5. CARD --------------------------------- */
+/* Selettori utili: .cards, .card, .badge, .card-header, .card-text */
+
+
+
+/* ------------------------------ 6. CHI SIAMO ------------------------------ */
+/* Selettori utili: .about-inner, .about-media, .about-text, .stats, .stat */
+
+
+
+/* ----------------------------- 7. NEWSLETTER ------------------------------ */
+/* Selettori utili: .newsletter-inner, .newsletter-text, .newsletter-form, .newsletter-row */
+
+
+
+/* ------------------------------- 8. FOOTER -------------------------------- */
+/* Selettori utili: .footer-cols, .footer-col, .footer-bottom, .social-links */
